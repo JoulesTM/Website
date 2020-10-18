@@ -1,0 +1,292 @@
+/* Elevar navegación y quitar márgenes */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Edición de toda la página (color de fondo y color, tamaño y tipo de fuente) */
+body {
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+/* Color de fuente y quitar decoración de la navegación*/
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Quitar puntos de lista */
+ul {
+  list-style: none;
+}
+/* Márgenes de ambos lados y separación */
+.container {
+  width: 90%;
+  margin: auto;
+}
+/* Editar Navegación */
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+}
+/* Tamaño de logotipo */
+.nav-logo {
+  width: 50px;
+}
+/* Orden de lista */
+.nav-main ul {
+  display: flex;
+}
+/* Separación entre conceptos */
+.nav-main ul li {
+  padding: 15px;
+}
+/* Separación entre el texto izquierdo y el logotipo */
+.nav-main ul.nav-left {
+  flex: 1;
+  margin-left: 1px;
+}
+/* Borde inferior de cada botón del navegador */
+.nav-main ul li a:hover {
+  border-bottom: 2px solid white;
+}
+/* Botón de menú */
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  font-size: 1.5rem;
+  display: none;
+}
+/* Espaciado para línea horizontal*/
+hr {
+  margin: 10px 0;
+}
+/* Presentación (no repetir, centrar, abarque toda la imagen y margen superior e inferior) */
+.showcase {
+  width: 100%;
+  height: 550px;
+  background: url("img/showcase.jpg") no-repeat center center/cover;
+  padding-bottom: 50px;
+  padding: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* Botón */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  font-size: 15px;
+  border: 1px solid #fff;
+  margin: 10px 0;
+}
+/* Animación de botón */
+.btn:hover {
+  opacity: 0.7;
+}
+/* Espcio entre el encabezado y el texto */
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+/* Secciones (posición agrupada, poner los bloques en una línea, espacio y márgenes entre bloques  */
+.new-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 10px 0;
+}
+/* Tamaño de imágenes de secciones */
+.new-sec img {
+  width: 100%;
+  height: 180px;
+}
+/* Tamaño de títulos de bloques y espacios */
+.new-sec h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+/* Botones de cada bloque */
+.new-sec a {
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+.new-sec a:hover {
+  text-decoration: underline;
+}
+/* BANNER UNO*/
+.banner-one {
+  width: 100%;
+  height: 350px;
+  background: url("img/banner.jpg") no-repeat center center/cover;
+  margin-bottom: 40px;
+}
+/* Contenido del banner (resolución y espacios [arriba, abajo, derecha e izquierda]) */
+.banner-one .content {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: white;
+}
+/* Espacios entre el contenido banner uno */
+.banner-one p,
+.banner-one h2 {
+  margin: 10px 0 20px 0;
+}
+/* BANNER DOS */
+.banner-two {
+  width: 100%;
+  height: 350px;
+  background: url("img/banner2.jpg") no-repeat center center/cover;
+  margin-bottom: 40px;
+}
+/* Contenido del banner (resolución y espacios [arriba, abajo, derecha e izquierda]) */
+.banner-two .content {
+  width: 50%;
+  padding: 100px 0 0 30px;
+  color: white;
+}
+/* Espacios entre el contenido banner dos*/
+.banner-two p,
+.banner-two h2 {
+  margin: 10px 0 20px 0;
+}
+/* Social */
+.social {
+  margin: 50px;
+}
+/* Texto de social */
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/* Posicionamiento de conjunto de íconos */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Margen entre los ícono */
+.links a {
+  margin: 0 30px;
+}
+/* Tamaño de cada ícono */
+.links a i {
+  font-size: 3rem;
+}
+/* Links de pie de página */
+.footer-links {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+/* Listas de pie de página */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+/* Centrar listas */
+.footer-container ul {
+  margin: 0 auto;
+}
+/* Separación entre línea */
+.footer-container ul li {
+  line-height: 2.8;
+}
+/* Diseño de Copyright */
+.footer {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* Adaptación para celular (700px) */
+@media (max-width: 700px) {
+  /* Reaparecer botón */
+  .menu-btn {
+    display: block;
+  }
+  /* Navegación móvil (Aparecer) */
+  .nav-main ul.nav-right {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    height: 100%;
+    padding: 50px;
+    opacity: 0.9;
+    transform: translateX(-200px);
+    transition: transform 0.5s ease-in-out;
+  }
+  /* Ocultar navegación */
+  .nav-main ul.nav-right.show {
+    transform: translateX(-1px);
+  }
+  /* Animación de lista de navegación */
+  .nav-main ul.nav-right li {
+    padding: 20px;
+    font-size: 14px;
+  }
+  /* Buscador hacia la izquierda */
+  .nav-main ul.nav-center {
+    margin-right: 40px;
+  }
+  /* Bloques */
+  .new-sec {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Banners */
+  .banner-one .content,
+  .banner-two .content {
+    width: 80%;
+  }
+  /* Pie de página */
+  .footer-links .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Adaptación para celular (700px) */
+@media (max-width: 500px) {
+  .new-sec {
+    grid-template-columns: 1fr;
+  }
+
+  .new-sec img {
+    height: 270px;
+  }
+
+  .banner-one .content,
+  .banner-two .content {
+    width: 100%;
+    padding: 60px 20px;
+  }
+
+  .footer-links .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
